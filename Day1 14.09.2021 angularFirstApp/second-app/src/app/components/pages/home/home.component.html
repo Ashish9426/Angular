@@ -1,0 +1,28 @@
+<p>home works!</p>
+<h3>{{title}}</h3>
+
+<hr>
+<input type="text" value="{{message1}}">
+<p>Message : {{message1}}</p>
+
+<hr>
+<input type="text" [(ngModel)]="message">
+<p>Message : {{message}}</p>
+
+<hr>
+<ul>
+    <li *ngFor = "let c of countries">{{c}}</li>
+</ul>
+
+<select name="" id="">
+    <option value="">Select Countries</option>
+    <!-- <option *ngFor="let c of countries" value = {{c}}>{{c}}</option> -->
+    <option *ngFor="let c of countries" [value] = "c">{{c}}</option>
+</select>
+
+<hr>
+<ul>
+    <li *ngFor = "let c of countries; index as i">index:{{i}}  {{c}}
+
+    </li>
+</ul>
