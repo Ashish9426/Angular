@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "authoApp": {
+    "templateDrivenFormValidation": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/authoApp",
+            "outputPath": "dist/templateDrivenFormValidation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "authoApp:build:production"
+              "browserTarget": "templateDrivenFormValidation:build:production"
             },
             "development": {
-              "browserTarget": "authoApp:build:development"
+              "browserTarget": "templateDrivenFormValidation:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "authoApp:build"
+            "browserTarget": "templateDrivenFormValidation:build"
           }
         },
         "test": {
@@ -108,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "authoApp"
+  "defaultProject": "templateDrivenFormValidation"
 }

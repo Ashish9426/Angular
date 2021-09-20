@@ -3,19 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/pages/login/login.component';
+import { RegistrationComponent } from './components/pages/registration/registration.component';
+import { OrderMenuComponent } from './components/pages/order-menu/order-menu.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
-import { ReactiveFormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
+    RegistrationComponent,
+    OrderMenuComponent,
     DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,ReactiveFormsModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
